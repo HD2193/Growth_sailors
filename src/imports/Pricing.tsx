@@ -4,6 +4,7 @@ import imgImage28 from "figma:asset/90c7836d9737eadb2c1a161949b92c21b1ffdc1f.png
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1 } from "./svg-f7p0x";
 import SharedNavBar from "../components/SharedNavBar";
+import SharedLinkLetsTalk from "../components/SharedLinkLetsTalk";
 
 function Link() {
   return (
@@ -169,7 +170,7 @@ function LinkLetsTalk() {
     >
       <Icon />
       <div className="absolute flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] left-[31.95px] not-italic text-[14.9px] text-nowrap text-white top-[27.63px] translate-y-[-50%] uppercase">
-        <p className="leading-[20.779px]">Let'€™s talk</p>
+        <p className="leading-[20.779px]">Let's talk</p>
       </div>
     </a>
   );
@@ -4533,7 +4534,7 @@ export default function Pricing() {
         />
       </div>
       <SharedNavBar />
-      <LinkLetsTalk />
+      <SharedLinkLetsTalk />
       <Frame6 />
       <Frame4 />
       <FooterSection />

@@ -9,6 +9,7 @@ import imgImage31 from "figma:asset/792e14a5fa5b43a831b2bb9b4ea460a360a27c5d.png
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1 } from "./svg-d4ry5";
 import SharedNavBar from "../components/SharedNavBar";
+import SharedLinkLetsTalk from "../components/SharedLinkLetsTalk";
 
 function Link() {
   return (
@@ -166,7 +167,7 @@ function Icon() {
 function LinkLetsTalk() {
   return (
     <a
-      className="absolute border border-[rgba(255,255,255,0.3)] border-solid h-[57.83px] left-[1161px] rounded-[1000px] top-[97px] w-[183.24px]"
+      className="absolute border border-[rgba(255,255,255,0.3)] border-solid h-[57.83px] left-[calc(83.33%-39px)] rounded-[1000px] top-[97px] w-[183.24px]"
       data-name="Link [lets_talk]"
       href="https://calendly.com/ismail-socialsailor/30min?month=2025-12"
       target="_blank"
@@ -179,7 +180,6 @@ function LinkLetsTalk() {
     </a>
   );
 }
-
 function Base() {
   return (
     <div
@@ -4385,7 +4385,7 @@ export default function Why({
         />
       </div>
       <SharedNavBar />
-      <LinkLetsTalk />
+      <SharedLinkLetsTalk />
       <Frame55 />
       <Container />
       <div className="absolute flex flex-col font-['Poppins:Regular',sans-serif] h-[139px] justify-center leading-[0] left-[calc(50%-0.5px)] not-italic text-[42px] text-center text-white top-[910.5px] tracking-[-3px] translate-x-[-50%] translate-y-[-50%] w-[465px]">

@@ -15,6 +15,8 @@ import imgImage7 from "figma:asset/1bfb0088055418283315f1456e686eddd68f331d.png"
 import imgImage6 from "figma:asset/0c2de3a9835264afbaf0f9f772cc637c5a3a981d.png";
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1, imgGroup2 } from "./svg-oak2b";
+import SharedNavBar from "../components/SharedNavBar";
+import SharedLinkLetsTalk from "../components/SharedLinkLetsTalk";
 
 function Link() {
   return (
@@ -9785,8 +9787,8 @@ export default function Home() {
           src={imgLogoWhiteBig1}
         />
       </div>
-      <NavBar />
-      <LinkLetsTalk />
+      <SharedNavBar />
+      <SharedLinkLetsTalk />
       <Frame7 />
       <Frame17 />
       <Frame20 />

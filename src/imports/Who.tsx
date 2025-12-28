@@ -9,6 +9,7 @@ import imgFf0C29B939D14Cd3Aef81763Fc1559021 from "figma:asset/6a2a3659e0ff78dfe8
 import imgImage26 from "figma:asset/21d11839b1e4a8c1fe49fb90f284b4fad3f9e469.png";
 import imgImageCultureCircles from "figma:asset/7143e4419e3bb1d554f9340d9708c1d16e1438c7.png";
 import SharedNavBar from "../components/SharedNavBar";
+import SharedLinkLetsTalk from "../components/SharedLinkLetsTalk";
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 
 function Link() {
@@ -2117,7 +2118,7 @@ export default function Who() {
         />
       </div>
       <SharedNavBar />
-      <LinkLetsTalk />
+      <SharedLinkLetsTalk />
       <Frame2 />
       <InstagramStreamlineCoreRemixFree />
       <DivCultureInfoWrap />

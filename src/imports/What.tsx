@@ -4,6 +4,7 @@ import imgImage23 from "figma:asset/e29111c94e62ab57f0518447107ce4f00804c21e.png
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1 } from "./svg-jdp87";
 import SharedNavBar from "../components/SharedNavBar";
+import SharedLinkLetsTalk from "../components/SharedLinkLetsTalk";
 
 function Link() {
   return (
@@ -3800,7 +3801,7 @@ export default function What() {
         />
       </div>
       <SharedNavBar />
-      <LinkLetsTalk />
+      <SharedLinkLetsTalk />
       <Frame6 />
       <div className="absolute flex flex-col font-['Poppins:Regular',sans-serif] h-[139px] justify-center leading-[0] left-[calc(50%-233px)] not-italic text-[42px] text-white top-[884.5px] tracking-[-3px] translate-y-[-50%] w-[465px]">
         <p className="leading-[65px]">
