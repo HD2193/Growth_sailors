@@ -72,9 +72,9 @@ export default function App() {
   }, []);
 
   return (
-    <div className="w-screen min-h-screen overflow-hidden bg-[#111]">
+    <div className="w-full min-h-screen bg-[#111] overflow-x-hidden">
       <div
-        className="w-[1440px] min-h-screen origin-top-left"
+        className="w-[1440px] origin-top-left"
         style={{
           transform: `scale(${scale})`,
           transformOrigin: "top left",

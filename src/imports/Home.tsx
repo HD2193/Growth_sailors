@@ -8918,7 +8918,7 @@ function Group54() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img
             alt=""
-            className="absolute h-full left-[-23.78%] max-w-none top-[7.57%] w-[324.85%] grayscale"
+            className="absolute h-full left-[-23.78%] max-w-none top-[7.57%] w-[324.85%]"
             src={imgImage12}
           />
         </div>
