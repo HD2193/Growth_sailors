@@ -57,11 +57,17 @@ export default function App() {
         e.preventDefault();
         setCurrentPage("who");
         window.scrollTo(0, 0);
-      } else if (linkText?.includes("numbers") || linkText?.includes("pricing")) {
+      } else if (
+        linkText?.includes("numbers") ||
+        linkText?.includes("pricing")
+      ) {
         e.preventDefault();
         setCurrentPage("pricing");
         window.scrollTo(0, 0);
-      } else if (linkText?.includes("home") || target.closest('[data-name*="logo"]')) {
+      } else if (
+        linkText?.includes("home") ||
+        target.closest('[data-name*="logo"]')
+      ) {
         e.preventDefault();
         setCurrentPage("home");
         window.scrollTo(0, 0);
