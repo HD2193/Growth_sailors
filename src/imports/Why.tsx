@@ -8,6 +8,7 @@ import imgImage29 from "figma:asset/8690bc71a95c0ccd8492edb342cf34ea353a4028.png
 import imgImage31 from "figma:asset/792e14a5fa5b43a831b2bb9b4ea460a360a27c5d.png";
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1 } from "./svg-d4ry5";
+import SharedNavBar from "../components/SharedNavBar";
 
 function Link() {
   return (
@@ -4383,7 +4384,7 @@ export default function Why({
           src={imgLogoWhiteBig1}
         />
       </div>
-      <NavBar />
+      <SharedNavBar />
       <LinkLetsTalk />
       <Frame55 />
       <Container />

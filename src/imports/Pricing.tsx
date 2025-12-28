@@ -3,6 +3,7 @@ import svgPaths from "./svg-nmo4fzujol";
 import imgImage28 from "figma:asset/90c7836d9737eadb2c1a161949b92c21b1ffdc1f.png";
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1 } from "./svg-f7p0x";
+import SharedNavBar from "../components/SharedNavBar";
 
 function Link() {
   return (
@@ -4531,7 +4532,7 @@ export default function Pricing() {
           src={imgLogoWhiteBig1}
         />
       </div>
-      <NavBar />
+      <SharedNavBar />
       <LinkLetsTalk />
       <Frame6 />
       <Frame4 />
