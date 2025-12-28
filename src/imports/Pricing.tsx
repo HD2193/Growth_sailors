@@ -4518,7 +4518,7 @@ function Group28() {
 export default function Pricing() {
   return (
     <div
-      className="bg-[#111] relative size-full overflow-x-hidden"
+      className="bg-[#111] relative w-full min-h-screen overflow-x-hidden"
       data-name="Pricing"
     >
       <div
