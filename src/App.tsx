@@ -41,9 +41,11 @@ export default function App() {
     const handleNavClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const linkText = target.textContent?.toLowerCase().trim();
-      
+
       // Find the closest clickable element
-      const clickedElement = target.closest('[data-name*="Link"], [data-name*="menu-item"]') || target;
+      const clickedElement =
+        target.closest('[data-name*="Link"], [data-name*="menu-item"]') ||
+        target;
       const elementText = clickedElement.textContent?.toLowerCase().trim();
 
       console.log("Clicked element text:", elementText);
@@ -66,7 +68,10 @@ export default function App() {
         console.log("Navigating to pricing page");
         setCurrentPage("pricing");
         window.scrollTo(0, 0);
-      } else if (elementText === "home" || target.closest('[data-name*="logo"]')) {
+      } else if (
+        elementText === "home" ||
+        target.closest('[data-name*="logo"]')
+      ) {
         e.preventDefault();
         setCurrentPage("home");
         window.scrollTo(0, 0);
