@@ -44,23 +44,24 @@ export default function App() {
 
       console.log("Clicked element text:", linkText);
 
-      if (linkText === "what") {
+      // Check if click is on navigation items
+      if (linkText?.includes("what")) {
         e.preventDefault();
         setCurrentPage("what");
         window.scrollTo(0, 0);
-      } else if (linkText === "why") {
+      } else if (linkText?.includes("why")) {
         e.preventDefault();
         setCurrentPage("why");
         window.scrollTo(0, 0);
-      } else if (linkText === "who") {
+      } else if (linkText?.includes("who")) {
         e.preventDefault();
         setCurrentPage("who");
         window.scrollTo(0, 0);
-      } else if (linkText === "numbers" || linkText === "pricing") {
+      } else if (linkText?.includes("numbers") || linkText?.includes("pricing")) {
         e.preventDefault();
         setCurrentPage("pricing");
         window.scrollTo(0, 0);
-      } else if (linkText === "home" || target.closest('[data-name*="logo"]')) {
+      } else if (linkText?.includes("home") || target.closest('[data-name*="logo"]')) {
         e.preventDefault();
         setCurrentPage("home");
         window.scrollTo(0, 0);
