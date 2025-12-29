@@ -5,6 +5,8 @@ import imgImageTeamMemberImages2 from "figma:asset/fa02469e486eb1662aeda120f8b67
 import imgImageTeamMemberImages3 from "figma:asset/3e032e044e7a3e6e2c5a09bfe1051512fb30402a.png";
 import imgImageTeamMemberImages4 from "figma:asset/40eed9a7763449213a472342221c909800c63e9b.png";
 import imgImageTeamMemberImages5 from "figma:asset/7559226180f39bea3acb86cf238a51cf99514f84.png";
+import imgAsim from "/Asim.png";
+import imgChandana from "/Chandana.png";
 import imgFf0C29B939D14Cd3Aef81763Fc1559021 from "figma:asset/6a2a3659e0ff78dfe885c1f1231ef63bdf3b38ec.png";
 import imgImage26 from "figma:asset/21d11839b1e4a8c1fe49fb90f284b4fad3f9e469.png";
 import imgImageCultureCircles from "figma:asset/7143e4419e3bb1d554f9340d9708c1d16e1438c7.png";
@@ -1244,12 +1246,28 @@ function DivTeamMemberInfo7() {
   );
 }
 
+function ImageTeamMemberImages6() {
+  return (
+    <div
+      className="absolute h-[459.36px] left-0 overflow-clip rounded-[21.6px] top-0 w-[339.83px]"
+      data-name="Image [team-member-images]"
+    >
+      <img
+        alt=""
+        className="absolute inset-0 max-w-none object-50%-50% object-contain pointer-events-none rounded-[21.6px] size-full"
+        src={imgChandana}
+      />
+    </div>
+  );
+}
+
 function ItemTeamListItem7() {
   return (
     <div
       className="absolute bg-[#e4e4e4] h-[459.36px] left-[1075.64px] rounded-[21.6px] top-[52.19px] w-[339.83px]"
       data-name="Item [team-list-item]"
     >
+      <ImageTeamMemberImages6 />
       <DivTeamItemPlusContainer7 />
       <DivTeamMemberInfo7 />
     </div>
@@ -1347,12 +1365,28 @@ function DivTeamMemberInfo8() {
   );
 }
 
+function ImageTeamMemberImages7() {
+  return (
+    <div
+      className="absolute h-[459.36px] left-0 overflow-clip rounded-[21.6px] top-0 w-[339.83px]"
+      data-name="Image [team-member-images]"
+    >
+      <img
+        alt=""
+        className="absolute inset-0 max-w-none object-50%-50% object-contain pointer-events-none rounded-[21.6px] size-full"
+        src={imgAsim}
+      />
+    </div>
+  );
+}
+
 function ItemTeamListItem8() {
   return (
     <div
       className="absolute bg-[#e4e4e4] h-[459.36px] left-[717.09px] rounded-[21.6px] top-0 w-[339.83px]"
       data-name="Item [team-list-item]"
     >
+      <ImageTeamMemberImages7 />
       <DivTeamItemPlusContainer8 />
       <DivTeamMemberInfo8 />
     </div>
