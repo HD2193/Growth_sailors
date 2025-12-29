@@ -170,7 +170,7 @@ function LinkLetsTalk() {
     >
       <Icon />
       <div className="absolute flex flex-col font-['Inter:Bold',sans-serif] font-bold justify-center leading-[0] left-[31.95px] not-italic text-[14.9px] text-nowrap text-white top-[27.63px] translate-y-[-50%] uppercase">
-        <p className="leading-[20.779px]">Let'€™s talk</p>
+        <p className="leading-[20.779px]">Let's talk</p>
       </div>
     </a>
   );
@@ -303,67 +303,67 @@ function GroupGlassEffect() {
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
       <div
         className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
         data-name="Base"
       >
-        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-gradient-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+        <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
       </div>
     </div>
   );
@@ -495,8 +495,8 @@ function InputWpcf7FormControl() {
       className="absolute h-[64.79px] left-[355.13px] overflow-clip rounded-[1660px] top-0 w-[299.29px]"
       data-name="Input [wpcf7-form-control]"
     >
-      <div className="absolute flex flex-col font-['Manrope:SemiBold',sans-serif] font-semibold justify-center leading-[0] left-[23.4px] overflow-ellipsis overflow-hidden text-[18.6px] text-black text-nowrap top-[32.39px] tracking-[-0.18px] translate-y-[-50%] uppercase w-[299.29px]">
-        <p className="leading-[18px] overflow-ellipsis overflow-hidden">
+      <div className="absolute flex flex-col font-['Manrope:SemiBold',sans-serif] font-semibold justify-center leading-[0] left-[23.4px] overflow-hidden text-ellipsis text-[18.6px] text-black text-nowrap top-[32.39px] tracking-[-0.18px] translate-y-[-50%] uppercase w-[299.29px]">
+        <p className="leading-[18px] overflow-hidden text-ellipsis">
           Send a message
         </p>
       </div>
@@ -554,8 +554,8 @@ function InputWpcf7FormControl1() {
       className="absolute border-[#a2a2a2] border-[0px_0px_1px] border-solid h-[44.88px] left-0 overflow-clip top-[196.5px] w-[654.41px]"
       data-name="Input [wpcf7-form-control]"
     >
-      <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-ellipsis overflow-hidden text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[654.41px]">
-        <p className="leading-[19.181px] overflow-ellipsis overflow-hidden">
+      <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-hidden text-ellipsis text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[654.41px]">
+        <p className="leading-[19.181px] overflow-hidden text-ellipsis">
           About Project
         </p>
       </div>
@@ -569,8 +569,8 @@ function InputWpcf7FormControl2() {
       className="absolute border-[#a2a2a2] border-[0px_0px_1px] border-solid h-[44.88px] left-0 overflow-clip top-[112.2px] w-[654.41px]"
       data-name="Input [wpcf7-form-control]"
     >
-      <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-ellipsis overflow-hidden text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[654.41px]">
-        <p className="leading-[19.181px] overflow-ellipsis overflow-hidden">
+      <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-hidden text-ellipsis text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[654.41px]">
+        <p className="leading-[19.181px] overflow-hidden text-ellipsis">
           Link your store
         </p>
       </div>
@@ -585,8 +585,8 @@ function InputWpcf7FormControl3() {
       data-name="Input [wpcf7-form-control]"
     >
       <div className="bg-clip-padding border-0 border-transparent border-solid overflow-clip relative rounded-[inherit] size-full">
-        <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-ellipsis overflow-hidden text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[299.27px]">
-          <p className="leading-[19.181px] overflow-ellipsis overflow-hidden">
+        <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-hidden text-ellipsis text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[299.27px]">
+          <p className="leading-[19.181px] overflow-hidden text-ellipsis">
             Full Name
           </p>
         </div>
@@ -606,8 +606,8 @@ function InputWpcf7FormControl4() {
       data-name="Input [wpcf7-form-control]"
     >
       <div className="bg-clip-padding border-0 border-transparent border-solid overflow-clip relative rounded-[inherit] size-full">
-        <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-ellipsis overflow-hidden text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[299.29px]">
-          <p className="leading-[19.181px] overflow-ellipsis overflow-hidden">
+        <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[19.19px] justify-center leading-[0] left-[5px] overflow-hidden text-ellipsis text-[#161616] text-[15.984px] text-nowrap top-[11.5px] translate-y-[-50%] w-[299.29px]">
+          <p className="leading-[19.181px] overflow-hidden text-ellipsis">
             E-mail
           </p>
         </div>
@@ -2165,7 +2165,7 @@ function Frame10() {
         className="absolute border border-[#181818] border-dashed -inset-px pointer-events-none rounded-[101px]"
       />
       <div className="capitalize flex flex-col font-['Manrope:Medium',sans-serif] font-medium h-[42px] justify-center leading-[0] relative shrink-0 text-[16px] text-black w-[96px]">
-        <p className="leading-[79px]">Converisons</p>
+        <p className="leading-[79px]">Conversions</p>
       </div>
     </div>
   );
@@ -2420,7 +2420,11 @@ function Frame8() {
       <Frame9 />
       <GroupGlassEffect />
       <div className="absolute capitalize flex flex-col font-['Poppins:Medium_Italic',sans-serif] h-[160px] italic justify-center leading-[0] left-[calc(50%-594px)] text-[72px] text-black top-[calc(50%-63px)] tracking-[-1px] translate-y-[-50%] w-[811px]">
-        <p className="leading-[79px]">Performance Marketing</p>
+        <p className="leading-[79px]">
+          Performance
+          <br />
+          Marketing
+        </p>
       </div>
       <Frame13 />
       <Group18 />
@@ -2439,13 +2443,13 @@ function Frame8() {
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[75px] justify-center leading-[0] left-[825px] text-[24px] text-white top-[66.5px] translate-y-[-50%] w-[393px]">
         <p className="leading-[25px]">
-          Performance Marketing that actuall scales
+          Performance Marketing that actually scales
         </p>
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[127px] justify-center leading-[21px] left-[825px] text-[18px] text-white top-[218.5px] translate-y-[-50%] w-[406px]">
         <p className="mb-0">
           Data-backed strategies, high-performing creatives, and precision
-          execution across Meta and Google '€” engineered to drive consistent
+          execution across Meta and Google — engineered to drive consistent
           revenue and predictable growth.
         </p>
         <p>&nbsp;</p>
@@ -2493,7 +2497,7 @@ function Frame17() {
         className="absolute border border-[#181818] border-dashed -inset-px pointer-events-none rounded-[101px]"
       />
       <div className="capitalize flex flex-col font-['Manrope:Medium',sans-serif] font-medium h-[42px] justify-center leading-[0] relative shrink-0 text-[16px] text-black w-[96px]">
-        <p className="leading-[79px]">Converisons</p>
+        <p className="leading-[79px]">Conversions</p>
       </div>
     </div>
   );
@@ -2767,13 +2771,13 @@ function Frame26() {
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[75px] justify-center leading-[0] left-[825px] text-[24px] text-white top-[66.5px] translate-y-[-50%] w-[393px]">
         <p className="leading-[25px]">
-          Performance Marketing that actuall scales
+          Performance Marketing that actually scales
         </p>
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[127px] justify-center leading-[21px] left-[825px] text-[18px] text-white top-[218.5px] translate-y-[-50%] w-[406px]">
         <p className="mb-0">
           Data-backed strategies, high-performing creatives, and precision
-          execution across Meta and Google '€” engineered to drive consistent
+          execution across Meta and Google — engineered to drive consistent
           revenue and predictable growth.
         </p>
         <p>&nbsp;</p>
@@ -2821,7 +2825,7 @@ function Frame28() {
         className="absolute border border-[#646464] border-dashed -inset-px pointer-events-none rounded-[101px]"
       />
       <div className="capitalize flex flex-col font-['Manrope:Medium',sans-serif] font-medium h-[42px] justify-center leading-[0] relative shrink-0 text-[16px] text-black w-[96px]">
-        <p className="leading-[79px]">Converisons</p>
+        <p className="leading-[79px]">Conversions</p>
       </div>
     </div>
   );
@@ -3095,13 +3099,13 @@ function Frame32() {
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[75px] justify-center leading-[0] left-[825px] text-[24px] text-white top-[66.5px] translate-y-[-50%] w-[393px]">
         <p className="leading-[25px]">
-          Performance Marketing that actuall scales
+          Performance Marketing that actually scales
         </p>
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[127px] justify-center leading-[21px] left-[825px] text-[18px] text-white top-[218.5px] translate-y-[-50%] w-[406px]">
         <p className="mb-0">
           Data-backed strategies, high-performing creatives, and precision
-          execution across Meta and Google '€” engineered to drive consistent
+          execution across Meta and Google — engineered to drive consistent
           revenue and predictable growth.
         </p>
         <p>&nbsp;</p>
@@ -3149,7 +3153,7 @@ function Frame34() {
         className="absolute border border-[#646464] border-dashed -inset-px pointer-events-none rounded-[101px]"
       />
       <div className="capitalize flex flex-col font-['Manrope:Medium',sans-serif] font-medium h-[42px] justify-center leading-[0] relative shrink-0 text-[16px] text-black w-[96px]">
-        <p className="leading-[79px]">Converisons</p>
+        <p className="leading-[79px]">Conversions</p>
       </div>
     </div>
   );
@@ -3423,13 +3427,13 @@ function Frame38() {
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[75px] justify-center leading-[0] left-[825px] text-[24px] text-white top-[66.5px] translate-y-[-50%] w-[393px]">
         <p className="leading-[25px]">
-          Performance Marketing that actuall scales
+          Performance Marketing that actually scales
         </p>
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[127px] justify-center leading-[21px] left-[825px] text-[18px] text-white top-[218.5px] translate-y-[-50%] w-[406px]">
         <p className="mb-0">
           Data-backed strategies, high-performing creatives, and precision
-          execution across Meta and Google '€” engineered to drive consistent
+          execution across Meta and Google — engineered to drive consistent
           revenue and predictable growth.
         </p>
         <p>&nbsp;</p>
@@ -3477,7 +3481,7 @@ function Frame40() {
         className="absolute border border-[#646464] border-dashed -inset-px pointer-events-none rounded-[101px]"
       />
       <div className="capitalize flex flex-col font-['Manrope:Medium',sans-serif] font-medium h-[42px] justify-center leading-[0] relative shrink-0 text-[16px] text-black w-[96px]">
-        <p className="leading-[79px]">Converisons</p>
+        <p className="leading-[79px]">Conversions</p>
       </div>
     </div>
   );
@@ -3751,13 +3755,13 @@ function Frame44() {
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[75px] justify-center leading-[0] left-[825px] text-[24px] text-white top-[66.5px] translate-y-[-50%] w-[393px]">
         <p className="leading-[25px]">
-          Performance Marketing that actuall scales
+          Performance Marketing that actually scales
         </p>
       </div>
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[127px] justify-center leading-[21px] left-[825px] text-[18px] text-white top-[218.5px] translate-y-[-50%] w-[406px]">
         <p className="mb-0">
           Data-backed strategies, high-performing creatives, and precision
-          execution across Meta and Google '€” engineered to drive consistent
+          execution across Meta and Google — engineered to drive consistent
           revenue and predictable growth.
         </p>
         <p>&nbsp;</p>
@@ -3795,7 +3799,7 @@ export default function What() {
         data-name="logo white big 1"
       >
         <img
-          alt=""
+          alt="Growth Sailor Logo"
           className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
           src={imgLogoWhiteBig1}
         />

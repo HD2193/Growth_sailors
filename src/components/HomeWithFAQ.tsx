@@ -51,6 +51,7 @@ const faqData = [
 
 export default function HomeWithFAQ() {
   const [openFAQs, setOpenFAQs] = useState<Set<number>>(new Set());
+  const [heightsUpdated, setHeightsUpdated] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -114,26 +115,62 @@ export default function HomeWithFAQ() {
     if (!container) return;
 
     const allFaqItems = container.querySelectorAll('[data-name*="faq-item"]');
-    
+
     allFaqItems.forEach((item, index) => {
       const htmlItem = item as HTMLElement;
       const isOpen = openFAQs.has(index);
-      
+
       if (isOpen) {
-        // Expand the FAQ item - calculate answer height
-        const answerLines = Math.ceil(faqData[index].answer.length / 80); // Rough estimate
-        const answerHeight = Math.max(100, answerLines * 29); // 29px line height
-        const totalHeight = 136.36 + answerHeight;
-        
+        // Expand the FAQ item - calculate answer height more accurately
+        const answerLength = faqData[index].answer.length;
+        const charsPerLine = 90; // Characters per line at this font size
+        const answerLines = Math.ceil(answerLength / charsPerLine);
+        const answerHeight = Math.max(120, answerLines * 32); // 32px line height including spacing
+        const totalHeight = 136.36 + answerHeight + 40; // Added 40px padding
+
         htmlItem.style.height = `${totalHeight}px`;
-        htmlItem.style.transition = 'height 0.3s ease-in-out';
+        htmlItem.style.minHeight = `${totalHeight}px`;
+        htmlItem.style.transition = 'height 0.3s ease-in-out, min-height 0.3s ease-in-out';
       } else {
         // Collapse to original height
         const originalHeight = index === 10 ? '137.36px' : (index === 3 ? '144.13px' : '136.36px');
         htmlItem.style.height = originalHeight;
-        htmlItem.style.transition = 'height 0.3s ease-in-out';
+        htmlItem.style.minHeight = originalHeight;
+        htmlItem.style.transition = 'height 0.3s ease-in-out, min-height 0.3s ease-in-out';
       }
     });
+
+    // Update FAQ section and main container heights
+    const faqSection = container.querySelector('[data-name="FAQ"]') as HTMLElement;
+    const mainContainer = container.querySelector('[data-name="Home"]') as HTMLElement;
+
+    if (faqSection && mainContainer) {
+      // Calculate total height needed for all FAQs
+      let totalFAQHeight = 0;
+      allFaqItems.forEach((item, index) => {
+        const isOpen = openFAQs.has(index);
+        if (isOpen) {
+          const answerLength = faqData[index].answer.length;
+          const answerLines = Math.ceil(answerLength / 90);
+          const answerHeight = Math.max(120, answerLines * 32);
+          totalFAQHeight += 136.36 + answerHeight + 40;
+        } else {
+          totalFAQHeight += index === 10 ? 137.36 : (index === 3 ? 144.13 : 136.36);
+        }
+      });
+
+      // Update FAQ section height
+      faqSection.style.height = `${totalFAQHeight + 200}px`;
+      faqSection.style.minHeight = `${totalFAQHeight + 200}px`;
+
+      // Update main container height to accommodate expanded FAQs
+      const baseHeight = 10200;
+      const extraHeight = Math.max(0, totalFAQHeight - 1508); // 1508 is original FAQ list height
+      mainContainer.style.height = `${baseHeight + extraHeight}px`;
+
+      // Trigger re-render after heights are updated
+      setTimeout(() => setHeightsUpdated(prev => prev + 1), 50);
+    }
   }, [openFAQs]);
 
   return (
@@ -144,34 +181,39 @@ export default function HomeWithFAQ() {
       {Array.from(openFAQs).map((faqIndex) => {
         const faqAnswer = faqData[faqIndex];
         if (!faqAnswer) return null;
-        
-        // Calculate position based on FAQ index
-        const baseTop = 8052; // 7606 + 446 (FAQ section base)
-        const itemHeight = 136.36;
-        
-        // Calculate cumulative height including expanded items before this one
-        let cumulativeTop = baseTop;
-        for (let i = 0; i < faqIndex; i++) {
-          cumulativeTop += itemHeight;
-          if (openFAQs.has(i)) {
-            const answerLines = Math.ceil(faqData[i].answer.length / 80);
-            const answerHeight = Math.max(100, answerLines * 29);
-            cumulativeTop += answerHeight;
-          }
+
+        // Get the actual FAQ item from DOM to use its real position
+        const container = containerRef.current;
+        if (!container) return null;
+
+        const allFaqItems = container.querySelectorAll('[data-name*="faq-item"]');
+        const currentFaqItem = allFaqItems[faqIndex] as HTMLElement;
+        if (!currentFaqItem) return null;
+
+        // Calculate absolute position by traversing offsetParent chain
+        let absoluteTop = 0;
+        let element: HTMLElement | null = currentFaqItem;
+        while (element && element !== document.body) {
+          absoluteTop += element.offsetTop;
+          element = element.offsetParent as HTMLElement;
         }
-        
-        const topPosition = cumulativeTop + 100; // +100 to position below question
-        
+
+        // Position answer 100px below the top of the FAQ item (below the question)
+        const topPosition = absoluteTop + 100;
+
+        // Use heightsUpdated in calculation to force re-render when heights change
+        const _ = heightsUpdated;
+
         return (
           <div
             key={faqIndex}
             className="absolute left-[281px] w-[802px] z-10 transition-all duration-300 ease-in-out"
-            style={{ 
+            style={{
               top: `${topPosition}px`,
               animation: 'fadeIn 0.3s ease-in-out'
             }}
           >
-            <p className="font-['Manrope:Medium',sans-serif] font-medium leading-[29px] text-[20px] text-[#e0e0e0] px-0 py-2">
+            <p className="font-['Manrope:Medium',sans-serif] font-medium leading-[29px] text-[20px] text-[#e0e0e0] px-0 py-2 whitespace-normal break-words">
               {faqAnswer.answer}
             </p>
           </div>

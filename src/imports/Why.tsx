@@ -6,6 +6,8 @@ import imgImage12 from "figma:asset/f4a111ed0c18b661845ed72c92322fec8ebb6002.png
 import imgImage8 from "figma:asset/391d4fd8453e4723fb92f1e8b28302358bc6af0f.png";
 import imgImage29 from "figma:asset/8690bc71a95c0ccd8492edb342cf34ea353a4028.png";
 import imgImage31 from "figma:asset/792e14a5fa5b43a831b2bb9b4ea460a360a27c5d.png";
+import imgImage7 from "figma:asset/1bfb0088055418283315f1456e686eddd68f331d.png";
+import imgImage6 from "figma:asset/0c2de3a9835264afbaf0f9f772cc637c5a3a981d.png";
 import imgLogoWhiteBig1 from "figma:asset/221e78b67b6af7a968c919083e537e0c2aa870b6.png";
 import { imgGroup, imgGroup1 } from "./svg-d4ry5";
 import SharedNavBar from "../components/SharedNavBar";
@@ -437,7 +439,7 @@ function Frame60() {
 
 function Frame59() {
   return (
-    <div className="absolute h-[307px] left-[26px] overflow-hidden rounded-[12px] top-[calc(50%-1px)] translate-y-[-50%] w-[411px]">
+    <div className="absolute h-[307px] left-[26px] overflow-hidden hover:overflow-y-auto rounded-[12px] top-[calc(50%-1px)] translate-y-[-50%] w-[411px] transition-all duration-300">
       <Frame60 />
     </div>
   );
@@ -1301,22 +1303,109 @@ function KyariCardSimple() {
     <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-[24px]">
       <img
         alt="Kyari"
-        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
         src={imgFrame188}
       />
-      <div className="absolute h-[853px] left-[-220px] top-[-195px] w-[828px]">
+      <div className="absolute h-[853px] left-[-220px] top-[-50px] w-[828px]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img
             alt=""
-            className="absolute h-full left-[-23.78%] max-w-none top-[7.57%] w-[324.85%]"
+            className="absolute h-full left-[-23.78%] max-w-none top-[0%] w-[324.85%] grayscale"
             src={imgImage12}
           />
         </div>
       </div>
-      <div className="absolute bg-black/70 bottom-0 left-0 right-0 p-6 rounded-b-[24px]">
-        <p className="font-['Poppins:Light',sans-serif] text-white text-[16px] leading-[23px]">
+      <div className="absolute bg-black h-[339px] left-0 overflow-clip rounded-tl-[34px] rounded-tr-[34px] top-[306px] w-[426px]">
+        <div
+          className="absolute flex h-[308.371px] items-center justify-center left-[-128.86px] top-[-116.86px] w-[333.224px]"
+          style={
+            {
+              "--transform-inner-width": "0",
+              "--transform-inner-height": "0",
+            } as React.CSSProperties
+          }
+        >
+          <div className="flex-none rotate-285">
+            <Group4 />
+          </div>
+        </div>
+        <p className="absolute font-['Poppins:Light',sans-serif] h-[80px] leading-[23px] left-[calc(50%-179px)] not-italic text-[16px] text-white top-[62px] tracking-[-0.48px] w-[372px]">
           Boosted digital discoverability and accelerated sales for plant and
-          decor SKUs across leading e-commerce channels.
+          décor SKUs across leading e-commerce channels.
+        </p>
+      </div>
+      <div className="absolute h-[135px] left-[131px] top-[84px] w-[151px]">
+        <div className="absolute inset-[-37.04%_-33.11%]">
+          <svg
+            className="block size-full"
+            fill="none"
+            preserveAspectRatio="none"
+            viewBox="0 0 251 235"
+          >
+            <g filter="url(#filter0_f_1_2089)" id="Ellipse 13">
+              <ellipse
+                cx="125.5"
+                cy="117.5"
+                fill="var(--fill-0, white)"
+                rx="75.5"
+                ry="67.5"
+              />
+            </g>
+            <defs>
+              <filter
+                colorInterpolationFilters="sRGB"
+                filterUnits="userSpaceOnUse"
+                height="235"
+                id="filter0_f_1_2089"
+                width="251"
+                x="0"
+                y="0"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  mode="normal"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  result="effect1_foregroundBlur_1_2089"
+                  stdDeviation="25"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <div
+        className="absolute h-[37px] left-[132px] top-[133px] w-[125px]"
+        data-name="image 8"
+      >
+        <img
+          alt=""
+          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+          src={imgFrame188}
+        />
+      </div>
+      <div className="absolute bg-[#cecece] h-[9px] left-[23px] overflow-clip rounded-[36px] top-[35px] w-[380px]">
+        <div className="absolute bg-white h-[9px] left-0 rounded-[36px] top-0 w-[106px]" />
+      </div>
+      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[22px] p-[8px] rounded-[36px] top-[554px] w-[266px]">
+        <div
+          aria-hidden="true"
+          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
+        />
+        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
+          Marketplace Onboarding
+        </p>
+      </div>
+      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[311px] p-[8px] rounded-[36px] top-[554px] w-[92px]">
+        <div
+          aria-hidden="true"
+          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
+        />
+        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
+          Listing
         </p>
       </div>
     </div>
@@ -1328,13 +1417,125 @@ function SpicePlatterCardSimple() {
     <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-[24px]">
       <img
         alt="Spice Platter"
-        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
         src={imgImage8}
       />
-      <div className="absolute bg-black/70 bottom-0 left-0 right-0 p-6 rounded-b-[24px]">
-        <p className="font-['Poppins:Light',sans-serif] text-white text-[16px] leading-[23px]">
-          Elevated brand presence and drove organic growth for premium spice
-          products through targeted marketplace strategies.
+      <div className="absolute h-[383px] left-1/2 overflow-clip top-[0px] translate-x-[-50%] w-[426px]">
+        <div
+          className="absolute h-[631px] left-[-18px] top-[-100px] w-[443px]"
+          data-name="image 7"
+        >
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img
+              alt=""
+              className="absolute h-[134.34%] left-[-52.41%] max-w-none top-[0%] w-[191.35%] grayscale"
+              src={imgImage7}
+            />
+          </div>
+        </div>
+        <div className="absolute h-[115px] left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] w-[222px]">
+          <div className="absolute inset-[-43.48%_-22.52%]">
+            <svg
+              className="block size-full"
+              fill="none"
+              preserveAspectRatio="none"
+              viewBox="0 0 322 215"
+            >
+              <g filter="url(#filter0_f_1_2091)" id="Ellipse 20">
+                <ellipse
+                  cx="161"
+                  cy="107.5"
+                  fill="url(#paint0_radial_1_2091)"
+                  rx="111"
+                  ry="57.5"
+                />
+              </g>
+              <defs>
+                <filter
+                  colorInterpolationFilters="sRGB"
+                  filterUnits="userSpaceOnUse"
+                  height="215"
+                  id="filter0_f_1_2091"
+                  width="322"
+                  x="0"
+                  y="0"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    mode="normal"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    result="effect1_foregroundBlur_1_2091"
+                    stdDeviation="25"
+                  />
+                </filter>
+                <radialGradient
+                  cx="0"
+                  cy="0"
+                  gradientTransform="translate(161 107.5) rotate(90) scale(75.4221 145.597)"
+                  gradientUnits="userSpaceOnUse"
+                  id="paint0_radial_1_2091"
+                  r="1"
+                >
+                  <stop stopColor="white" />
+                  <stop offset="1" stopColor="white" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div
+          className="absolute h-[91px] left-1/2 top-[151px] w-[172px] translate-x-[-50%]"
+          data-name="image 6"
+        >
+          <img
+            alt=""
+            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
+            src={imgImage6}
+          />
+        </div>
+      </div>
+      <div className="absolute bg-black h-[339px] left-0 overflow-clip rounded-tl-[34px] rounded-tr-[34px] top-[306px] w-[426px]">
+        <div
+          className="absolute flex h-[314.021px] items-center justify-center left-[-131.08px] top-[-119.69px] w-[337.665px]"
+          style={
+            {
+              "--transform-inner-width": "0",
+              "--transform-inner-height": "0",
+            } as React.CSSProperties
+          }
+        >
+          <div className="flex-none rotate-[106.599deg]">
+            <Group4 />
+          </div>
+        </div>
+        <p className="absolute font-['Poppins:Light',sans-serif] h-[80px] leading-[23px] left-[calc(50%-179px)] not-italic text-[16px] text-white top-[62px] tracking-[-0.48px] w-[372px]">
+          Boosted digital discoverability and accelerated sales for plant and
+          décor SKUs across leading e-commerce channels.
+        </p>
+      </div>
+      <div className="absolute bg-[#cecece] h-[9px] left-[23px] overflow-clip rounded-[36px] top-[35px] w-[380px]">
+        <div className="absolute bg-white h-[9px] left-[274px] rounded-[36px] top-0 w-[106px]" />
+      </div>
+      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[22px] p-[8px] rounded-[36px] top-[554px] w-[266px]">
+        <div
+          aria-hidden="true"
+          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
+        />
+        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
+          Marketplace Onboarding
+        </p>
+      </div>
+      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[311px] p-[8px] rounded-[36px] top-[554px] w-[92px]">
+        <div
+          aria-hidden="true"
+          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
+        />
+        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
+          Listing
         </p>
       </div>
     </div>

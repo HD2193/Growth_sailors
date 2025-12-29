@@ -1667,7 +1667,7 @@ function H2TeamTitle() {
       <Group />
       <div className="absolute flex flex-col font-['Poppins:Medium',sans-serif] justify-center leading-[0] left-[calc(50%-428.5px)] not-italic text-[60.1px] text-white top-[32.5px] tracking-[-4px] translate-y-[-50%] w-[855px]">
         <p className="leading-[64.8px]">
-          <span>{`We'€™ve come `}</span>
+          <span>{`We've come `}</span>
           <span className="font-['Poppins:ExtraLight',sans-serif] not-italic tracking-[-4px]">
             together
           </span>
@@ -2106,7 +2106,7 @@ function ListCardList() {
 
 export default function Who() {
   return (
-    <div className="bg-[#111] relative size-full" data-name="Who">
+    <div className="bg-[#111] relative w-full h-[3400px] overflow-hidden" data-name="Who">
       <div
         className="absolute h-[54px] left-[86px] top-[96px] w-[141px]"
         data-name="logo white big 1"

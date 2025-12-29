@@ -5944,7 +5944,7 @@ function ButtonFaqBtn() {
 function DivOpenFaqItem() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn />
@@ -5958,7 +5958,7 @@ function DivOpenFaqItem() {
 function ItemFaqItem() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6015,7 +6015,7 @@ function ButtonFaqBtn1() {
 function DivOpenFaqItem1() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn1 />
@@ -6031,7 +6031,7 @@ function DivOpenFaqItem1() {
 function ItemFaqItem1() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6088,7 +6088,7 @@ function ButtonFaqBtn2() {
 function DivOpenFaqItem2() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn2 />
@@ -6104,7 +6104,7 @@ function DivOpenFaqItem2() {
 function ItemFaqItem2() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6181,7 +6181,7 @@ function ParagraphFaqItemText() {
 function DivOpenFaqItem3() {
   return (
     <div
-      className="absolute h-[71.13px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[71.13px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn3 />
@@ -6193,7 +6193,7 @@ function DivOpenFaqItem3() {
 function ItemFaqItem3() {
   return (
     <div
-      className="h-[144.13px] relative shrink-0 w-[877.4px]"
+      className="min-h-[144.13px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6250,7 +6250,7 @@ function ButtonFaqBtn4() {
 function DivOpenFaqItem4() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn4 />
@@ -6266,7 +6266,7 @@ function DivOpenFaqItem4() {
 function ItemFaqItem4() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6323,7 +6323,7 @@ function ButtonFaqBtn5() {
 function DivOpenFaqItem5() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn5 />
@@ -6339,7 +6339,7 @@ function DivOpenFaqItem5() {
 function ItemFaqItem5() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6396,7 +6396,7 @@ function ButtonFaqBtn6() {
 function DivOpenFaqItem6() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn6 />
@@ -6410,7 +6410,7 @@ function DivOpenFaqItem6() {
 function ItemFaqItem6() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6467,7 +6467,7 @@ function ButtonFaqBtn7() {
 function DivOpenFaqItem7() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn7 />
@@ -6483,7 +6483,7 @@ function DivOpenFaqItem7() {
 function ItemFaqItem7() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6540,7 +6540,7 @@ function ButtonFaqBtn8() {
 function DivOpenFaqItem8() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn8 />
@@ -6556,7 +6556,7 @@ function DivOpenFaqItem8() {
 function ItemFaqItem8() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6613,7 +6613,7 @@ function ButtonFaqBtn9() {
 function DivOpenFaqItem9() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn9 />
@@ -6627,7 +6627,7 @@ function DivOpenFaqItem9() {
 function ItemFaqItem9() {
   return (
     <div
-      className="h-[136.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[136.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6684,7 +6684,7 @@ function ButtonFaqBtn10() {
 function DivOpenFaqItem10() {
   return (
     <div
-      className="absolute h-[63.36px] left-0 top-[37px] w-[877.4px]"
+      className="absolute min-h-[63.36px] h-auto left-0 top-[37px] w-[877.4px]"
       data-name="Div [open_faq_item]"
     >
       <ButtonFaqBtn10 />
@@ -6700,7 +6700,7 @@ function DivOpenFaqItem10() {
 function ItemFaqItem10() {
   return (
     <div
-      className="h-[137.36px] relative shrink-0 w-[877.4px]"
+      className="min-h-[137.36px] relative shrink-0 w-[877.4px]"
       data-name="Item [faq-item]"
     >
       <div
@@ -6770,7 +6770,7 @@ function Frame32() {
 
 function Frame65() {
   return (
-    <div className="absolute bg-[#111] min-h-[2140px] h-auto left-0 overflow-visible top-[7606px] w-[1440px]">
+    <div className="absolute bg-[#111] min-h-[2140px] h-auto left-0 overflow-hidden top-[7606px] w-[1440px]">
       <Faq />
       <Frame32 />
       <div className="absolute font-['Poppins:Light',sans-serif] leading-[0] left-[calc(50%-237px)] not-italic text-[42px] text-nowrap text-white top-[168px] tracking-[-1.68px]">
@@ -8914,13 +8914,13 @@ function Group54() {
   return (
     <div className="absolute left-0 top-0">
       <div
-        className="absolute h-[853px] left-[-220px] top-[-195px] w-[828px]"
+        className="absolute h-[853px] left-[-220px] top-[-50px] w-[828px]"
         data-name="image 12"
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img
             alt=""
-            className="absolute h-full left-[-23.78%] max-w-none top-[7.57%] w-[324.85%]"
+            className="absolute h-full left-[-23.78%] max-w-none top-[0%] w-[324.85%] grayscale"
             src={imgImage12}
           />
         </div>
@@ -9307,15 +9307,15 @@ function Group55() {
 
 function Frame() {
   return (
-    <div className="absolute h-[383px] left-1/2 overflow-clip top-[-34px] translate-x-[-50%] w-[426px]">
+    <div className="absolute h-[383px] left-1/2 overflow-clip top-[0px] translate-x-[-50%] w-[426px]">
       <div
-        className="absolute h-[631px] left-[-18px] top-[-138px] w-[443px]"
+        className="absolute h-[631px] left-[-18px] top-[-100px] w-[443px]"
         data-name="image 7"
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img
             alt=""
-            className="absolute h-[134.34%] left-[-52.41%] max-w-none top-[2.73%] w-[191.35%] grayscale"
+            className="absolute h-[134.34%] left-[-52.41%] max-w-none top-[0%] w-[191.35%] grayscale"
             src={imgImage7}
           />
         </div>
@@ -9375,7 +9375,7 @@ function Frame() {
         </div>
       </div>
       <div
-        className="absolute h-[91px] left-[127px] top-[151px] w-[172px]"
+        className="absolute h-[91px] left-1/2 top-[151px] w-[172px] translate-x-[-50%]"
         data-name="image 6"
       >
         <img
@@ -9776,7 +9776,7 @@ function Frame103() {
 
 export default function Home() {
   return (
-    <div className="bg-[#111] relative w-full h-[10400px]" data-name="Home">
+    <div className="bg-[#111] relative w-full h-[10200px] overflow-x-hidden" data-name="Home">
       <div
         className="absolute h-[54px] left-[86px] top-[96px] w-[141px]"
         data-name="logo white big 1"
