@@ -8822,20 +8822,17 @@ function Frame2() {
 
 function Group54() {
   return (
-    <div className="absolute left-0 top-0">
-      <div
-        className="absolute h-[853px] left-[-220px] top-[-50px] w-[828px]"
-        data-name="image 12"
-      >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img
-            alt=""
-            className="absolute h-full left-[-23.78%] max-w-none top-[0%] w-[324.85%] grayscale"
-            src={imgImage12}
-          />
-        </div>
-      </div>
+    <div className="absolute inset-0">
+      {/* Kyari bg: zoom + anchor LEFT so discount text side is cropped out */}
+      <img
+        alt=""
+        className="absolute inset-0 max-w-none size-full object-cover pointer-events-none grayscale
+                   object-[0%_25%] origin-top-left scale-[2.4]"
+        src={imgImage12}
+      />
+
       <Frame9 />
+
       <div className="absolute h-[135px] left-[131px] top-[84px] w-[151px]">
         <div className="absolute inset-[-37.04%_-33.11%]">
           <svg
@@ -8879,6 +8876,7 @@ function Group54() {
           </svg>
         </div>
       </div>
+
       <div
         className="absolute h-[37px] left-[132px] top-[133px] w-[125px]"
         data-name="image 8"
@@ -8889,13 +8887,13 @@ function Group54() {
           src={imgImage8}
         />
       </div>
+
       <Frame40 />
       <Frame1 />
       <Frame2 />
     </div>
   );
 }
-
 function Kyari() {
   return (
     <div
@@ -9218,18 +9216,15 @@ function Group55() {
 function Frame() {
   return (
     <div className="absolute h-[383px] left-1/2 overflow-clip top-[0px] translate-x-[-50%] w-[426px]">
-      <div
-        className="absolute h-[631px] left-[-18px] top-[-100px] w-[443px]"
-        data-name="image 7"
-      >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img
-            alt=""
-            className="absolute h-[134.34%] left-[-52.41%] max-w-none top-[0%] w-[191.35%] grayscale"
-            src={imgImage7}
-          />
-        </div>
-      </div>
+      {/* Spice bg: zoom in so bottom poster text/border gets cropped */}
+      <img
+        alt=""
+        className="absolute inset-0 max-w-none size-full object-cover pointer-events-none grayscale
+                   object-[60%_15%] origin-[60%_15%] scale-[1.9]"
+        src={imgImage7}
+      />
+
+      {/* glow */}
       <div className="absolute h-[115px] left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] w-[222px]">
         <div className="absolute inset-[-43.48%_-22.52%]">
           <svg
@@ -9284,6 +9279,8 @@ function Frame() {
           </svg>
         </div>
       </div>
+
+      {/* logo */}
       <div
         className="absolute h-[91px] left-1/2 top-[151px] w-[172px] translate-x-[-50%]"
         data-name="image 6"
@@ -9524,24 +9521,16 @@ function Frame101() {
 
 // Individual card wrapper components for the carousel - EXACT copies of original components
 function KyariCard() {
-  // Kyari card with plant image background
   return (
     <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-tl-[24px] rounded-tr-[24px]">
-      {/* Background layer - dark gradient */}
-      <div className="absolute inset-0 bg-black rounded-tl-[24px] rounded-tr-[24px]" />
-      {/* Content layer with Kyari brand details */}
       <Group54 />
     </div>
   );
 }
 
 function SpicePlatterCard() {
-  // Spice Platter card with spices image background
   return (
     <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-tl-[24px] rounded-tr-[24px]">
-      {/* Background layer - dark gradient */}
-      <div className="absolute inset-0 bg-black rounded-tl-[24px] rounded-tr-[24px]" />
-      {/* Content layers with spice image and brand details */}
       <Frame />
       <Frame11 />
       <Frame52 />

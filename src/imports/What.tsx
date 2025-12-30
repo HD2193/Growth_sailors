@@ -181,8 +181,16 @@ function Base() {
     <div
       className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
       data-name="Base"
+      style={{
+        background: 'linear-gradient(to right, rgba(255,255,255,0.10) 85%, transparent 100%)',
+        backdropFilter: 'blur(100px) saturate(160%)',
+        backgroundColor: 'rgba(120,255,220,0.10)',
+        border: '1px solid rgba(255,255,255,0.18)',
+        boxShadow: '0 24px 60px rgba(0,0,0,0.28)',
+        mixBlendMode: 'overlay',
+        opacity: 0.55,
+      }}
     >
-      <div className="absolute backdrop-blur-[80px] backdrop-filter bg-black/30 inset-0 rounded-[24px]" />
     </div>
   );
 }
@@ -192,6 +200,10 @@ function GlassEffect() {
     <div
       className="absolute content-stretch flex h-[415px] items-start left-[23.02px] pl-0 pr-[5px] py-0 rounded-[24px] top-1/2 translate-y-[-50%] w-[1392.967px]"
       data-name="Glass effect 1"
+      style={{
+        background: 'linear-gradient(to right, rgba(51,0,153,0.25), rgba(144,230,208,0.25))',
+        mixBlendMode: 'soft-light',
+      }}
     >
       {[...Array(11).keys()].map((_, i) => (
         <Base key={i} />
@@ -210,7 +222,7 @@ function Group21() {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <img
             alt=""
-            className="absolute h-[185.82%] left-[-3.19%] max-w-none top-0 w-[106.39%]"
+            className="absolute h-[185.82%] left-[-3.19%] max-w-none top-[-15%] w-[106.39%]"
             src={imgImage23}
           />
         </div>
