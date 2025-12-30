@@ -182,7 +182,7 @@ function Base() {
       className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
       data-name="Base"
     >
-      <div className="absolute backdrop-blur-[150px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+      <div className="absolute backdrop-blur-[80px] backdrop-filter bg-black/30 inset-0 rounded-[24px]" />
     </div>
   );
 }

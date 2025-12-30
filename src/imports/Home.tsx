@@ -900,15 +900,6 @@ function Group28() {
                 ry="34.1204"
               />
             </g>
-            <g filter="url(#filter2_f_1_2464)" id="Ellipse 12">
-              <ellipse
-                cx="136.576"
-                cy="189.913"
-                fill="var(--fill-0, white)"
-                rx="26.5799"
-                ry="28.8282"
-              />
-            </g>
           </g>
           <defs>
             <filter
@@ -951,27 +942,6 @@ function Group28() {
               <feGaussianBlur
                 result="effect1_foregroundBlur_1_2464"
                 stdDeviation="60"
-              />
-            </filter>
-            <filter
-              colorInterpolationFilters="sRGB"
-              filterUnits="userSpaceOnUse"
-              height="217.656"
-              id="filter2_f_1_2464"
-              width="213.16"
-              x="29.9957"
-              y="81.0846"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                mode="normal"
-                result="shape"
-              />
-              <feGaussianBlur
-                result="effect1_foregroundBlur_1_2464"
-                stdDeviation="40"
               />
             </filter>
           </defs>
@@ -1323,15 +1293,6 @@ function Group35() {
                 ry="34.1204"
               />
             </g>
-            <g filter="url(#filter2_f_1_2464)" id="Ellipse 12">
-              <ellipse
-                cx="136.576"
-                cy="189.913"
-                fill="var(--fill-0, white)"
-                rx="26.5799"
-                ry="28.8282"
-              />
-            </g>
           </g>
           <defs>
             <filter
@@ -1374,27 +1335,6 @@ function Group35() {
               <feGaussianBlur
                 result="effect1_foregroundBlur_1_2464"
                 stdDeviation="60"
-              />
-            </filter>
-            <filter
-              colorInterpolationFilters="sRGB"
-              filterUnits="userSpaceOnUse"
-              height="217.656"
-              id="filter2_f_1_2464"
-              width="213.16"
-              x="29.9957"
-              y="81.0846"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                mode="normal"
-                result="shape"
-              />
-              <feGaussianBlur
-                result="effect1_foregroundBlur_1_2464"
-                stdDeviation="40"
               />
             </filter>
           </defs>
@@ -1735,15 +1675,6 @@ function Group36() {
                 ry="34.1204"
               />
             </g>
-            <g filter="url(#filter2_f_1_2464)" id="Ellipse 12">
-              <ellipse
-                cx="136.576"
-                cy="189.913"
-                fill="var(--fill-0, white)"
-                rx="26.5799"
-                ry="28.8282"
-              />
-            </g>
           </g>
           <defs>
             <filter
@@ -1786,27 +1717,6 @@ function Group36() {
               <feGaussianBlur
                 result="effect1_foregroundBlur_1_2464"
                 stdDeviation="60"
-              />
-            </filter>
-            <filter
-              colorInterpolationFilters="sRGB"
-              filterUnits="userSpaceOnUse"
-              height="217.656"
-              id="filter2_f_1_2464"
-              width="213.16"
-              x="29.9957"
-              y="81.0846"
-            >
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend
-                in="SourceGraphic"
-                in2="BackgroundImageFix"
-                mode="normal"
-                result="shape"
-              />
-              <feGaussianBlur
-                result="effect1_foregroundBlur_1_2464"
-                stdDeviation="40"
               />
             </filter>
           </defs>
