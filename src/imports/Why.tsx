@@ -185,38 +185,47 @@ function LinkLetsTalk() {
 function Base() {
   return (
     <div
-      className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
+      className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative shrink-0"
       data-name="Base"
       style={{
-        background: 'linear-gradient(to right, rgba(255,255,255,0.10) 85%, transparent 100%)',
-        backdropFilter: 'blur(100px) saturate(160%)',
-        backgroundColor: 'rgba(120,255,220,0.10)',
-        border: '1px solid rgba(255,255,255,0.18)',
-        boxShadow: '0 24px 60px rgba(0,0,0,0.28)',
-        mixBlendMode: 'overlay',
-        opacity: 0.55,
+        // straighter vertical stripes (no rounding)
+        background:
+          "linear-gradient(to right, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0.07) 55%, rgba(255,255,255,0.00) 100%)",
+        backgroundColor: "rgba(74,190,143,0.12)",
+        // subtle crisp edges between stripes
+        borderLeft: "1px solid rgba(255,255,255,0.10)",
+        borderRight: "1px solid rgba(0,0,0,0.06)",
+        // stronger frost
+        backdropFilter: "blur(140px) saturate(190%)",
+        WebkitBackdropFilter: "blur(140px) saturate(190%)",
+        boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.06)",
+        opacity: 0.70,
       }}
-    >
-    </div>
+    />
   );
 }
+
+
 
 function GlassEffect() {
   return (
     <div
-      className="absolute content-stretch flex h-[415px] items-start left-0 pl-0 pr-[5px] py-0 rounded-[24px] top-[calc(50%-0.5px)] translate-y-[-50%] w-[1421px]"
+      className="absolute content-stretch flex h-[415px] items-start left-0 pl-0 pr-[5px] py-0 rounded-[24px] top-[calc(50%-0.5px)] translate-y-[-50%] w-[1421px] overflow-hidden"
       data-name="Glass effect 1"
       style={{
-        background: 'linear-gradient(to right, rgba(51,0,153,0.25), rgba(144,230,208,0.25))',
-        mixBlendMode: 'soft-light',
+        background:
+          "linear-gradient(90deg, rgba(3,28,17,0.42) 0%, rgba(74,190,143,0.26) 44%, rgba(120,255,220,0.18) 100%)",
+        border: "1px solid rgba(255,255,255,0.10)",
+        boxShadow: "0 30px 80px rgba(0,0,0,0.35)",
       }}
     >
-      {[...Array(11).keys()].map((_, i) => (
+      {Array.from({ length: 11 }).map((_, i) => (
         <Base key={i} />
       ))}
     </div>
   );
 }
+
 
 function Frame54() {
   return (
@@ -242,7 +251,7 @@ function Group14() {
         <p className="leading-[65px]">behind the</p>
       </div>
       <div className="absolute flex flex-col font-['Poppins:SemiBold_Italic',sans-serif] h-[93px] italic justify-center leading-[0] left-[459px] text-[72px] text-white top-[283.5px] tracking-[-4px] translate-y-[-50%] w-[261px]">
-        <p className="leading-[65px]">wins</p>
+        <p className="leading-[65px] font-extrabold">wins&gt;</p>
       </div>
       <Frame54 />
     </div>
@@ -384,14 +393,37 @@ function Frame55() {
             className="h-[1996.717px] relative w-[1498.047px]"
             data-name="image 24"
           >
-            <img
-              alt=""
-              className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-              src={imgImage24}
-            />
-          </div>
+<img
+  alt=""
+  className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+  src={imgImage24}
+  style={{ filter: "saturate(1.2) contrast(1.05)" }}
+/>
+
+{/* ✅ Teal tint overlay to match glass */}
+      {/* teal tint over the background image */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(3,28,17,0.55) 0%, rgba(74,190,143,0.35) 45%, rgba(120,255,220,0.25) 100%)",
+          mixBlendMode: "multiply",
+          opacity: 0.92,
+        }}
+      />
+
+      </div>
         </div>
       </div>
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(3,28,17,0.35) 0%, rgba(74,190,143,0.22) 35%, rgba(74,190,143,0.12) 100%)",
+          mixBlendMode: "multiply",
+        }}
+      />
       <GlassEffect />
       <Group14 />
       <div className="absolute flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[127px] justify-center leading-[0] left-[925px] text-[18px] text-white top-[183.5px] translate-y-[-50%] w-[418px]">
@@ -419,32 +451,25 @@ function Frame58() {
   return <div className="absolute left-[437px] size-[24px] top-[52px]" />;
 }
 
-function Group15() {
-  return (
-    <div className="absolute contents font-['Inter:Regular',sans-serif] font-normal leading-[0] left-1/2 not-italic text-[#5e5e5e] text-[48px] text-center top-[calc(50%+47.5px)] tracking-[-3px] translate-x-[-50%] translate-y-[-50%]">
-      <div className="absolute flex flex-col h-[50.246px] justify-center left-[calc(50%-0.5px)] top-[calc(50%-285.38px)] translate-x-[-50%] translate-y-[-50%] w-[170px]">
-        <p className="leading-none">Clothing</p>
-      </div>
-      <div className="absolute flex flex-col h-[50.246px] justify-center left-[calc(50%-0.5px)] top-[calc(50%-118.94px)] translate-x-[-50%] translate-y-[-50%] w-[220px]">
-        <p className="leading-none">Electronics</p>
-      </div>
-      <div className="absolute flex flex-col h-[50.246px] justify-center left-1/2 top-[calc(50%+47.5px)] translate-x-[-50%] translate-y-[-50%] w-[267px]">
-        <p className="leading-none">Supplements</p>
-      </div>
-      <div className="absolute flex flex-col h-[50.246px] justify-center left-[calc(50%-0.5px)] top-[calc(50%+213.94px)] translate-x-[-50%] translate-y-[-50%] w-[216px]">
-        <p className="leading-none">Cosmetics</p>
-      </div>
-      <div className="absolute flex flex-col h-[50.246px] justify-center left-1/2 top-[calc(50%+380.38px)] translate-x-[-50%] translate-y-[-50%] w-[139px]">
-        <p className="leading-none">Others</p>
-      </div>
-    </div>
-  );
-}
+function IndustriesList() {
+  const items = [
+    "Clothing",
+    "Electronics",
+    "Supplements",
+    "Cosmetics",
+    "Others",
+  ];
 
-function Frame60() {
   return (
-    <div className="absolute h-[1029px] left-[72px] top-[-334px] w-[267px]">
-      <Group15 />
+    <div className="flex flex-col items-center gap-[116px] py-[48px] font-['Inter:Regular',sans-serif] font-normal not-italic text-[#5e5e5e] text-[48px] tracking-[-3px] text-center">
+      {items.map((label) => (
+        <div
+          key={label}
+          className="h-[50.246px] flex items-center justify-center leading-none"
+        >
+          {label}
+        </div>
+      ))}
     </div>
   );
 }
@@ -452,7 +477,7 @@ function Frame60() {
 function Frame59() {
   return (
     <div className="absolute h-[307px] left-[26px] overflow-hidden hover:overflow-y-auto rounded-[12px] top-[calc(50%-1px)] translate-y-[-50%] w-[411px] transition-all duration-300">
-      <Frame60 />
+      <IndustriesList />
     </div>
   );
 }
@@ -1312,140 +1337,67 @@ function Frame69() {
 // Simplified card components for Industries section carousel
 function KyariCardSimple() {
   return (
-    <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-[24px]">
-      <img
-        alt="Kyari"
-        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
-        src={imgFrame188}
-      />
-      <div className="absolute h-[853px] left-[-220px] top-[-50px] w-[828px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img
-            alt=""
-            className="absolute h-full left-[-23.78%] max-w-none top-[0%] w-[324.85%] grayscale"
-            src={imgImage12}
-          />
-        </div>
-      </div>
-      <div className="absolute bg-black h-[339px] left-0 overflow-clip rounded-tl-[34px] rounded-tr-[34px] top-[306px] w-[426px]">
-        <div
-          className="absolute flex h-[308.371px] items-center justify-center left-[-128.86px] top-[-116.86px] w-[333.224px]"
-          style={
-            {
-              "--transform-inner-width": "0",
-              "--transform-inner-height": "0",
-            } as React.CSSProperties
-          }
-        >
-          <div className="flex-none rotate-285">
-            <Group4 />
-          </div>
-        </div>
-        <p className="absolute font-['Poppins:Light',sans-serif] h-[80px] leading-[23px] left-[calc(50%-179px)] not-italic text-[16px] text-white top-[62px] tracking-[-0.48px] w-[372px]">
-          Boosted digital discoverability and accelerated sales for plant and
-          décor SKUs across leading e-commerce channels.
-        </p>
-      </div>
-      <div className="absolute h-[135px] left-[131px] top-[84px] w-[151px]">
-        <div className="absolute inset-[-37.04%_-33.11%]">
-          <svg
-            className="block size-full"
-            fill="none"
-            preserveAspectRatio="none"
-            viewBox="0 0 251 235"
-          >
-            <g filter="url(#filter0_f_1_2089)" id="Ellipse 13">
-              <ellipse
-                cx="125.5"
-                cy="117.5"
-                fill="var(--fill-0, white)"
-                rx="75.5"
-                ry="67.5"
-              />
-            </g>
-            <defs>
-              <filter
-                colorInterpolationFilters="sRGB"
-                filterUnits="userSpaceOnUse"
-                height="235"
-                id="filter0_f_1_2089"
-                width="251"
-                x="0"
-                y="0"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  mode="normal"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  result="effect1_foregroundBlur_1_2089"
-                  stdDeviation="25"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      <div
-        className="absolute h-[37px] left-[132px] top-[133px] w-[125px]"
-        data-name="image 8"
-      >
+    <div className="relative h-[644px] w-[426px] shrink-0 overflow-hidden rounded-[24px] bg-black">
+      {/* Top image */}
+      <div className="absolute left-0 top-0 h-[383px] w-full overflow-hidden rounded-t-[24px]">
         <img
-          alt=""
-          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+          alt="Kyari"
+          className="absolute inset-0 size-full object-cover grayscale pointer-events-none"
           src={imgFrame188}
         />
       </div>
-      <div className="absolute bg-[#cecece] h-[9px] left-[23px] overflow-clip rounded-[36px] top-[35px] w-[380px]">
-        <div className="absolute bg-white h-[9px] left-0 rounded-[36px] top-0 w-[106px]" />
-      </div>
-      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[22px] p-[8px] rounded-[36px] top-[554px] w-[266px]">
-        <div
-          aria-hidden="true"
-          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
-        />
-        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
-          Marketplace Onboarding
+
+      {/* Bottom panel */}
+      <div className="absolute left-0 top-[306px] h-[338px] w-full rounded-t-[34px] bg-black overflow-hidden">
+        {/* Green blob */}
+        <div className="absolute -left-[130px] -top-[120px] rotate-[285deg]">
+          <Group4 />
+        </div>
+
+        <p className="absolute left-[26px] top-[62px] w-[372px] font-['Poppins:Light',sans-serif] text-[16px] leading-[23px] tracking-[-0.48px] text-white">
+          Boosted digital discoverability and accelerated sales for plant and
+          décor SKUs across leading e-commerce channels.
         </p>
-      </div>
-      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[311px] p-[8px] rounded-[36px] top-[554px] w-[92px]">
-        <div
-          aria-hidden="true"
-          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
-        />
-        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
-          Listing
-        </p>
+
+        <div className="absolute left-[24px] right-[24px] bottom-[24px] flex items-center justify-between gap-4">
+          <button
+            type="button"
+            className="relative h-[34px] px-5 rounded-[36px]"
+          >
+            <span className="absolute inset-0 border border-dashed border-[#878787] rounded-[36px]" />
+            <span className="relative font-['Poppins:Medium',sans-serif] text-[16px] text-white uppercase whitespace-nowrap">
+              Marketplace Onboarding
+            </span>
+          </button>
+
+          <button
+            type="button"
+            className="relative h-[34px] px-5 rounded-[36px]"
+          >
+            <span className="absolute inset-0 border border-dashed border-[#878787] rounded-[36px]" />
+            <span className="relative font-['Poppins:Medium',sans-serif] text-[16px] text-white uppercase whitespace-nowrap">
+              Listing
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );
 }
-
 function SpicePlatterCardSimple() {
   return (
-    <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-[24px]">
-      <img
-        alt="Spice Platter"
-        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
-        src={imgImage8}
-      />
-      <div className="absolute h-[383px] left-1/2 overflow-clip top-[0px] translate-x-[-50%] w-[426px]">
-        <div
-          className="absolute h-[631px] left-[-18px] top-[-100px] w-[443px]"
-          data-name="image 7"
-        >
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <img
-              alt=""
-              className="absolute h-[134.34%] left-[-52.41%] max-w-none top-[0%] w-[191.35%] grayscale"
-              src={imgImage7}
-            />
-          </div>
-        </div>
-        <div className="absolute h-[115px] left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] w-[222px]">
+    <div className="relative h-[644px] w-[426px] shrink-0 overflow-hidden rounded-[24px] bg-black">
+      {/* Top image */}
+      <div className="absolute left-0 top-0 h-[383px] w-full overflow-hidden rounded-t-[24px]">
+        <img
+          alt="Spice Platter"
+          className="absolute inset-0 size-full object-cover grayscale pointer-events-none"
+          src={imgImage7}
+          style={{ transform: "scale(1.9)", transformOrigin: "60% 15%" }}
+        />
+
+        {/* glow */}
+        <div className="absolute h-[115px] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[222px]">
           <div className="absolute inset-[-43.48%_-22.52%]">
             <svg
               className="block size-full"
@@ -1499,56 +1451,49 @@ function SpicePlatterCardSimple() {
             </svg>
           </div>
         </div>
-        <div
-          className="absolute h-[91px] left-1/2 top-[151px] w-[172px] translate-x-[-50%]"
-          data-name="image 6"
-        >
+
+        {/* logo */}
+        <div className="absolute h-[91px] left-1/2 top-[151px] w-[172px] -translate-x-1/2">
           <img
             alt=""
-            className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
+            className="absolute inset-0 size-full object-cover grayscale pointer-events-none"
             src={imgImage6}
           />
         </div>
       </div>
-      <div className="absolute bg-black h-[339px] left-0 overflow-clip rounded-tl-[34px] rounded-tr-[34px] top-[306px] w-[426px]">
-        <div
-          className="absolute flex h-[314.021px] items-center justify-center left-[-131.08px] top-[-119.69px] w-[337.665px]"
-          style={
-            {
-              "--transform-inner-width": "0",
-              "--transform-inner-height": "0",
-            } as React.CSSProperties
-          }
-        >
-          <div className="flex-none rotate-[106.599deg]">
-            <Group4 />
-          </div>
+
+      {/* Bottom panel */}
+      <div className="absolute left-0 top-[306px] h-[338px] w-full rounded-t-[34px] bg-black overflow-hidden">
+        <div className="absolute -left-[130px] -top-[120px] rotate-[285deg]">
+          <Group4 />
         </div>
-        <p className="absolute font-['Poppins:Light',sans-serif] h-[80px] leading-[23px] left-[calc(50%-179px)] not-italic text-[16px] text-white top-[62px] tracking-[-0.48px] w-[372px]">
+
+        <p className="absolute left-[26px] top-[62px] w-[372px] font-['Poppins:Light',sans-serif] text-[16px] leading-[23px] tracking-[-0.48px] text-white">
           Boosted digital discoverability and accelerated sales for plant and
           décor SKUs across leading e-commerce channels.
         </p>
-      </div>
-      <div className="absolute bg-[#cecece] h-[9px] left-[23px] overflow-clip rounded-[36px] top-[35px] w-[380px]">
-        <div className="absolute bg-white h-[9px] left-[274px] rounded-[36px] top-0 w-[106px]" />
-      </div>
-      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[22px] p-[8px] rounded-[36px] top-[554px] w-[266px]">
-        <div
-          aria-hidden="true"
-          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
-        />
-        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
-          Marketplace Onboarding
-        </p>
-      </div>
-      <div className="absolute content-stretch flex h-[34px] items-center justify-center left-[311px] p-[8px] rounded-[36px] top-[554px] w-[92px]">
-        <div
-          aria-hidden="true"
-          className="absolute border border-[#878787] border-dashed inset-0 pointer-events-none rounded-[36px]"
-        />
-        <p className="font-['Poppins:Medium',sans-serif] leading-[23px] not-italic relative shrink-0 text-[16px] text-nowrap text-white uppercase">
-          Listing
-        </p>
+
+        <div className="absolute left-[24px] right-[24px] bottom-[24px] flex items-center justify-between gap-4">
+          <button
+            type="button"
+            className="relative h-[34px] px-5 rounded-[36px]"
+          >
+            <span className="absolute inset-0 border border-dashed border-[#878787] rounded-[36px]" />
+            <span className="relative font-['Poppins:Medium',sans-serif] text-[16px] text-white uppercase whitespace-nowrap">
+              Marketplace Onboarding
+            </span>
+          </button>
+
+          <button
+            type="button"
+            className="relative h-[34px] px-5 rounded-[36px]"
+          >
+            <span className="absolute inset-0 border border-dashed border-[#878787] rounded-[36px]" />
+            <span className="relative font-['Poppins:Medium',sans-serif] text-[16px] text-white uppercase whitespace-nowrap">
+              Listing
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -1556,33 +1501,57 @@ function SpicePlatterCardSimple() {
 
 function HealthyMasterCardSimple() {
   return (
-    <div className="relative h-[644px] w-[426px] shrink-0 overflow-clip rounded-[24px]">
-      <img
-        alt="Healthy Master"
-        className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-        src={imgImage8}
-      />
-      <div className="absolute h-[558px] left-[-43px] top-[-158px] w-[500px]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="relative h-[644px] w-[426px] shrink-0 overflow-hidden rounded-[24px] bg-black">
+      {/* Top image */}
+      <div className="absolute left-0 top-0 h-[383px] w-full overflow-hidden rounded-t-[24px]">
+        <img
+          alt="Healthy Master"
+          className="absolute inset-0 size-full object-cover pointer-events-none"
+          src={imgImage31}
+        />
+
+        {/* logo */}
+        <div className="absolute left-1/2 top-[138px] -translate-x-1/2">
           <img
             alt=""
-            className="absolute h-[89.61%] left-0 max-w-none top-0 w-full"
+            className="h-[64px] w-auto pointer-events-none"
             src={imgImage29}
           />
         </div>
       </div>
-      <div className="absolute left-[103px] size-[209px] top-[55px]">
-        <img
-          alt=""
-          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
-          src={imgImage31}
-        />
-      </div>
-      <div className="absolute bg-black/70 bottom-0 left-0 right-0 p-6 rounded-b-[24px]">
-        <p className="font-['Poppins:Light',sans-serif] text-white text-[16px] leading-[23px]">
+
+      {/* Bottom panel */}
+      <div className="absolute left-0 top-[306px] h-[338px] w-full rounded-t-[34px] bg-black overflow-hidden">
+        <div className="absolute -left-[130px] -top-[120px] rotate-[285deg]">
+          <Group4 />
+        </div>
+
+        <p className="absolute left-[26px] top-[62px] w-[372px] font-['Poppins:Light',sans-serif] text-[16px] leading-[23px] tracking-[-0.48px] text-white">
           Scaled health supplement brand with strategic marketplace optimization
           and enhanced product visibility.
         </p>
+
+        <div className="absolute left-[24px] right-[24px] bottom-[24px] flex items-center justify-between gap-4">
+          <button
+            type="button"
+            className="relative h-[34px] px-5 rounded-[36px]"
+          >
+            <span className="absolute inset-0 border border-dashed border-[#878787] rounded-[36px]" />
+            <span className="relative font-['Poppins:Medium',sans-serif] text-[16px] text-white uppercase whitespace-nowrap">
+              Marketplace Onboarding
+            </span>
+          </button>
+
+          <button
+            type="button"
+            className="relative h-[34px] px-5 rounded-[36px]"
+          >
+            <span className="absolute inset-0 border border-dashed border-[#878787] rounded-[36px]" />
+            <span className="relative font-['Poppins:Medium',sans-serif] text-[16px] text-white uppercase whitespace-nowrap">
+              Listing
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -1596,48 +1565,52 @@ function IndustriesCarousel() {
     SpicePlatterCardSimple,
     HealthyMasterCardSimple,
   ];
+  const len = cards.length;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-    }, 3000); // 3 second auto-rotation
-
+      setCurrentIndex((p) => (p + 1) % len);
+    }, 3500);
     return () => clearInterval(interval);
-  }, [cards.length]);
+  }, [len]);
+
+  const Prev = cards[(currentIndex - 1 + len) % len];
+  const Curr = cards[currentIndex];
+  const Next = cards[(currentIndex + 1) % len];
 
   return (
-    <div className="absolute bg-[#111] h-[681px] left-[calc(50%+218.5px)] overflow-hidden rounded-bl-[38px] rounded-tl-[38px] top-[calc(50%-6px)] translate-x-[-50%] translate-y-[-50%] w-[450px]">
+    <div className="absolute right-[56px] top-[49px] bg-[#111] h-[681px] w-[929px] overflow-hidden rounded-[38px]">
+      {/* cards row (scaled to match Figma) */}
       <div
-        className="flex transition-transform duration-300 ease-in-out"
+        className="absolute left-0 top-[18px] flex gap-6"
         style={{
-          transform: `translateX(-${currentIndex * 426}px)`,
-          paddingTop: "18px",
-          paddingLeft: "12px",
+          transform: "translateX(22px) scale(0.66)",
+          transformOrigin: "top left",
         }}
       >
-        {cards.map((Card, index) => (
-          <Card key={index} />
-        ))}
+        <Prev />
+        <Curr />
+        <Next />
       </div>
-      {/* Carousel Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
-        {cards.map((_, index) => (
+
+      {/* Dots */}
+      <div className="absolute bottom-[26px] left-1/2 -translate-x-1/2 flex gap-3">
+        {cards.map((_, idx) => (
           <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentIndex ? "bg-white scale-110" : "bg-white/40"
+            key={idx}
+            type="button"
+            onClick={() => setCurrentIndex(idx)}
+            className={`h-2.5 w-2.5 rounded-full transition-all ${
+              idx === currentIndex
+                ? "bg-[#111] ring-2 ring-[#111]"
+                : "bg-[#9a9a9a]"
             }`}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={`Go to slide ${idx + 1}`}
           />
         ))}
       </div>
     </div>
   );
-}
-
-function Frame57() {
-  return <IndustriesCarousel />;
 }
 
 function Group16({
@@ -1791,16 +1764,15 @@ function Frame56({
   onDotClick?: (index: number) => void;
 }) {
   return (
-    <div className="absolute bg-white h-[779px] left-0 overflow-clip rounded-bl-[32px] rounded-tl-[32px] top-[1057px] w-[1440px]">
+    <div className="absolute bg-white h-[779px] left-0 overflow-hidden rounded-bl-[32px] rounded-tl-[32px] top-[1057px] w-[1440px]">
       <Frame59 />
-      <div className="absolute flex h-[117px] items-center justify-center left-[-27px] top-[425px] w-[531px]">
-        <div className="flex-none rotate-180">
-          <div className="bg-linear-to-b from-[#ffffff] h-[117px] to-[rgba(255,255,255,0)] w-[531px]" />
-        </div>
-      </div>
-      <div className="absolute bg-linear-to-b from-[#ffffff] h-[117px] left-[-26px] to-[rgba(255,255,255,0)] top-[235px] w-[531px]" />
-      <Frame57 />
-      <Group16 activeSlide={activeSlide} onDotClick={onDotClick} />
+
+      {/* left fades */}
+      <div className="absolute left-[-26px] top-[235px] w-[531px] h-[117px] bg-gradient-to-b from-white to-transparent" />
+      <div className="absolute left-[-27px] top-[425px] w-[531px] h-[117px] bg-gradient-to-b from-white to-transparent rotate-180" />
+
+<IndustriesCarousel />
+
       <Frame24 />
       <Button1 />
     </div>
@@ -3352,24 +3324,20 @@ function Frame66() {
 function Group17() {
   return (
     <div
-      className="flex gap-6 animate-[industries-marquee_20s_linear_infinite]"
+      className="featured-marquee flex gap-6"
       style={{ paddingTop: "18px", paddingLeft: "24px" }}
     >
       <KyariCardSimple />
       <SpicePlatterCardSimple />
       <HealthyMasterCardSimple />
-      {/* Duplicate for seamless loop */}
-      <KyariCardSimple />
-      <SpicePlatterCardSimple />
-      <HealthyMasterCardSimple />
-      {/* Triple for wider container */}
+
+      {/* duplicate set for seamless loop */}
       <KyariCardSimple />
       <SpicePlatterCardSimple />
       <HealthyMasterCardSimple />
     </div>
   );
 }
-
 function Frame67() {
   return (
     <div className="absolute h-[680px] left-0 top-[53px] w-full overflow-hidden">
@@ -3380,7 +3348,17 @@ function Frame67() {
 
 function Frame68() {
   return (
-    <div className="absolute bg-black border border-black border-solid h-[798px] left-[calc(50%-0.5px)] overflow-clip rounded-[36px] top-[2049px] translate-x-[-50%] w-[1369px]">
+    <div className="absolute bg-black border border-black h-[784px] left-1/2 overflow-hidden rounded-[36px] top-[2049px] translate-x-[-50%] w-[1369px]">
+      <style>{`
+        @keyframes featuredMarquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .featured-marquee {
+          width: max-content;
+          animation: featuredMarquee 22s linear infinite;
+        }
+      `}</style>
       <Frame67 />
     </div>
   );
@@ -3396,7 +3374,7 @@ function H2HeadingForm() {
         <div className="bg-clip-padding border-0 border-transparent border-solid content-stretch flex flex-col gap-[0.003px] items-start leading-[0] not-italic pb-[7149.878px] pl-0 pr-[127.078px] pt-0 relative size-full text-[#161616] text-[51.2px] text-nowrap tracking-[-1.1088px]">
           <div className="flex flex-col font-['Poppins:SemiBold',sans-serif] justify-center relative shrink-0">
             <p className="leading-[55.872px] text-nowrap">
-              <span className="font-['Poppins:Bold_Italic',sans-serif] italic">
+              <span className="font-['Poppins:ExtraBold_Italic',sans-serif] font-extrabold italic">
                 Ready
               </span>
               <span>{` to discuss your `}</span>
@@ -4604,13 +4582,13 @@ export default function Why({
       <div className="absolute flex flex-col font-['Poppins:Regular',sans-serif] h-[139px] justify-center leading-[0] left-[calc(50%-0.5px)] not-italic text-[42px] text-center text-white top-[910.5px] tracking-[-3px] translate-x-[-50%] translate-y-[-50%] w-[465px]">
         <p className="leading-[43px]">
           <span>{`Real `}</span>
-          <span className="font-['Poppins:Bold_Italic',sans-serif] italic">
+          <span className="font-['Poppins:ExtraBold_Italic',sans-serif] font-extrabold italic">
             stories.
           </span>
           <span>{` Real `}</span>
-          <span className="font-['Poppins:Bold_Italic',sans-serif] italic">{`growth. `}</span>
+          <span className="font-['Poppins:ExtraBold_Italic',sans-serif] font-extrabold italic">{`growth. `}</span>
           <span>{`Real `}</span>
-          <span className="font-['Poppins:Bold_Italic',sans-serif] italic">
+          <span className="font-['Poppins:ExtraBold_Italic',sans-serif] font-extrabold italic">
             numbers.
           </span>
         </p>

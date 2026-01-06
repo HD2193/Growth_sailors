@@ -371,9 +371,9 @@ function Hero() {
     >
       <div className="absolute font-['Poppins:ExtraLight',sans-serif] inset-0 leading-[0] not-italic text-[#e8e8e8] text-[0px] tracking-[-2.88px]">
         <p className="leading-[82px] mb-0 text-[72px]">
-          <span className="font-['Poppins:Regular',sans-serif] not-italic">{`Empowering brands to `}</span>
+          <span className="font-['Poppins:Regular',sans-serif] not-italic">{`Empowering brands `}</span>
           <span className="font-['Poppins:Bold_Italic',sans-serif] italic">
-            grow
+            to grow
           </span>
           <span className="font-['Poppins:Regular',sans-serif] not-italic">
             {" "}

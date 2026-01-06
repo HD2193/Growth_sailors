@@ -188,49 +188,65 @@ function Base() {
 }
 
 function Base1() {
+  // Frosted / Gaussian blur band behind the headline (not the whole hero).
+  // In Figma this is a full-width strip with soft fade at the top/bottom edges.
+  const bandMask =
+    "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 82%, rgba(0,0,0,0) 100%)";
+
   return (
     <div
-      className="absolute blur-[25px] filter h-[434px] left-1/2 rounded-[24px] top-[95px] translate-x-[-50%] w-[1440px]"
-      data-name="Base"
+      className="absolute inset-x-0 top-[243px] -translate-y-1/2 h-[380px] overflow-hidden pointer-events-none"
+      style={{
+        WebkitMaskImage: bandMask,
+        maskImage: bandMask,
+      }}
+      data-name="Hero Frost Band"
     >
-      <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+      {/* Blurred copy of the hero artwork (true Gaussian-style blur) */}
+      <img
+        alt=""
+        src={imgImage28}
+        className="absolute inset-0 h-full w-full object-cover scale-110 blur-[24px] saturate-150 brightness-110 opacity-95"
+      />
+
+      {/* Frost / glass tint + subtle highlights */}
+      <div className="absolute inset-0 bg-white/12" />
+      <div className="absolute inset-0 bg-linear-to-b from-white/10 via-transparent to-black/10" />
+      <div className="absolute inset-0 border-y border-white/10" />
     </div>
   );
 }
 
+
 function Frame6() {
   return (
-    <div className="absolute bg-white h-[585px] left-0 overflow-clip top-[222px] w-[1440px]">
-      <div
-        className="absolute h-[691px] left-[-51px] top-[-34px] w-[1491px]"
-        data-name="image 28"
-      >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img
-            alt=""
-            className="absolute h-[141.59%] left-[-1.84%] max-w-none top-[-16.82%] w-[116.74%]"
-            src={imgImage28}
-          />
-        </div>
-      </div>
+    <div className="absolute bg-black h-[585px] left-0 overflow-hidden top-[222px] w-[1440px]">
+      {/* Hero artwork (kept sharp, not globally blurred) */}
+      <img
+        alt=""
+        src={imgImage28}
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      {/* Light contrast overlay so white text reads nicely */}
+      <div className="absolute inset-0 bg-black/20" />
+
+      {/* Left-side vertical glass strip (existing design element) */}
       <Base />
+
+      {/* Glass / Gaussian blur panel behind the CTA only */}
       <Base1 />
+
+      {/* Headline */}
       <div className="absolute flex flex-col font-['Pacifico:Regular',sans-serif] justify-center leading-[0] left-[calc(50%-0.5px)] not-italic text-[72px] text-center text-white top-[243px] tracking-[-2.88px] translate-x-[-50%] translate-y-[-50%] w-[993px]">
         <p className="leading-[82px]">
           <span className="font-['Poppins:Regular',sans-serif] not-italic">{`Your `}</span>
-          <span className="font-['Poppins:SemiBold_Italic',sans-serif] italic">
-            brand,
-          </span>
+          <span className="font-['Poppins:SemiBold_Italic',sans-serif] italic">brand,</span>
           <span className="font-['Poppins:Regular',sans-serif] not-italic">{` built `}</span>
-          <span className="font-['Poppins:Medium',sans-serif] not-italic">
-            once.
-          </span>
+          <span className="font-['Poppins:Medium',sans-serif] not-italic">once.</span>
           <span className="font-['Poppins:Regular',sans-serif] not-italic">{` Your `}</span>
           <span className="font-['Poppins:SemiBold_Italic',sans-serif] italic">{`growth, `}</span>
           <span className="font-['Poppins:Regular',sans-serif] not-italic">{`built to `}</span>
-          <span className="font-['Poppins:Medium',sans-serif] not-italic">
-            last.
-          </span>
+          <span className="font-['Poppins:Medium',sans-serif] not-italic">last.</span>
         </p>
       </div>
     </div>

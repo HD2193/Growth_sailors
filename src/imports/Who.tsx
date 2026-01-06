@@ -190,15 +190,25 @@ function Base() {
       className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
       data-name="Base"
     >
-      <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+      {/* Vertical frosted stripe: slightly defined edges + lighter blur (closer to current site) */}
+      <div
+        className="absolute inset-0 backdrop-blur-[16px] backdrop-saturate-140 backdrop-brightness-110"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.10) 12%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.10) 88%, rgba(255,255,255,0) 100%)",
+        }}
+      />
+      {/* Soft depth */}
+      <div className="absolute inset-0 opacity-35 bg-linear-to-b from-[rgba(255,255,255,0.10)] via-[rgba(255,255,255,0)] to-[rgba(0,0,0,0.10)]" />
     </div>
   );
 }
 
+
 function GlassEffect() {
   return (
     <div
-      className="absolute content-stretch flex h-[686px] items-start left-0 pl-0 pr-[5px] py-0 rounded-[24px] top-[calc(50%-166px)] translate-y-[-50%] w-[1393px]"
+      className="absolute inset-0 content-stretch flex items-start pl-0 pr-[5px] py-0"
       data-name="Glass effect 1"
     >
       {[...Array(11).keys()].map((_, i) => (
@@ -208,21 +218,31 @@ function GlassEffect() {
   );
 }
 
+
 function Base1() {
   return (
     <div
       className="basis-0 grow h-full min-h-px min-w-px mr-[-5px] relative rounded-[24px] shrink-0"
       data-name="Base"
     >
-      <div className="absolute backdrop-blur-[50px] backdrop-filter bg-linear-to-r from-[rgba(255,255,255,0)] inset-0 mix-blend-overlay to-[rgba(255,255,255,0)] via-[16.667%] via-[rgba(59,59,59,0.2)]" />
+      {/* Secondary stripe layer: slightly lighter, helps the glass feel without over-blurring */}
+      <div
+        className="absolute inset-0 backdrop-blur-[12px] backdrop-saturate-135 backdrop-brightness-110"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.08) 12%, rgba(255,255,255,0.14) 50%, rgba(255,255,255,0.08) 88%, rgba(255,255,255,0) 100%)",
+        }}
+      />
+      <div className="absolute inset-0 opacity-25 bg-linear-to-b from-[rgba(255,255,255,0.08)] via-[rgba(255,255,255,0)] to-[rgba(0,0,0,0.08)]" />
     </div>
   );
 }
 
+
 function GlassEffect1() {
   return (
     <div
-      className="absolute content-stretch flex h-[1004px] items-start left-[40px] pl-0 pr-[5px] py-0 rounded-[24px] top-[calc(50%+1px)] translate-y-[-50%] w-[1373px]"
+      className="absolute inset-0 content-stretch flex items-start pl-0 pr-[5px] py-0 opacity-80"
       data-name="Glass effect 2"
     >
       {[...Array(11).keys()].map((_, i) => (
@@ -231,6 +251,7 @@ function GlassEffect1() {
     </div>
   );
 }
+
 
 function ImageTeamMemberImages() {
   return (
@@ -1537,7 +1558,7 @@ function ImageTeamMemberImages5() {
       >
         <img
           alt=""
-          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full grayscale"
           src={imgFf0C29B939D14Cd3Aef81763Fc1559021}
         />
       </div>
@@ -1681,7 +1702,8 @@ function Group() {
     <div className="absolute contents left-[80px] top-[72px]">
       <div className="absolute flex flex-col font-['Poppins:Regular',sans-serif] justify-center leading-[0] left-[80px] not-italic text-[60.1px] text-nowrap text-white top-[119.4px] tracking-[-1.296px] translate-y-[-50%]">
         <p className="leading-[64.8px]">
-          <span className="font-['Poppins:Bold_Italic',sans-serif] italic">
+          {/* Figma: "bold ideas" is visually bolder than the rest */}
+          <span className="font-['Poppins:Bold',sans-serif] font-bold italic">
             bold ideas
           </span>
           <span>{` into `}</span>
@@ -1743,24 +1765,46 @@ function Frame1() {
 
 function Frame2() {
   return (
-    <div className="absolute bg-white h-[1068px] left-0 overflow-clip rounded-[24px] top-[319px] w-[1440px]">
-      <GlassEffect />
-      <div
-        className="absolute h-[1130px] left-[-101px] top-[-61px] w-[2010px]"
-        data-name="image 26"
-      >
+    <div className="absolute h-[1068px] left-0 overflow-clip rounded-[24px] top-[319px] w-[1440px]">
+      {/* Background texture (choose a better crop + keep colors vivid) */}
+      <div className="absolute inset-0 z-0" data-name="image 26">
         <img
           alt=""
-          className="absolute inset-0 max-w-none object-50%-50% object-cover pointer-events-none size-full"
+          className="absolute inset-0 max-w-none object-cover object-[50%_22%] pointer-events-none size-full saturate-125 contrast-105"
           src={imgImage26}
         />
+        {/* Cool teal/blue wash (matches Figma) */}
+        <div className="absolute inset-0 pointer-events-none bg-linear-to-b from-[rgba(0,255,210,0.10)] via-[rgba(0,160,190,0.20)] to-[rgba(120,110,255,0.12)]" />
       </div>
-      <GlassEffect1 />
-      <DivContainer />
-      <Frame1 />
+
+      {/* Global haze/frost (Gaussian feel) - keep it subtle so colors show through */}
+      <div className="absolute inset-0 z-10 pointer-events-none backdrop-blur-[32px] backdrop-saturate-150 bg-[rgba(200,255,245,0.06)]" />
+
+      {/* Vertical frosted stripes (inset, with a top fade so stripes don't start at the very top) */}
+      <div
+        className="absolute inset-[28px] z-20 pointer-events-none overflow-hidden rounded-[24px]"
+        style={{
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.85) 18%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 100%)",
+          maskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.85) 18%, rgba(0,0,0,1) 26%, rgba(0,0,0,1) 100%)",
+        }}
+      >
+        <GlassEffect />
+        <GlassEffect1 />
+        {/* Soft edge vignette to keep focus on center (lighter than before) */}
+        <div className="absolute inset-0 bg-linear-to-b from-[rgba(0,0,0,0.18)] via-[rgba(0,0,0,0.04)] to-[rgba(0,0,0,0.18)]" />
+      </div>
+
+      {/* Content stays exactly as-is */}
+      <div className="absolute inset-0 z-30">
+        <DivContainer />
+        <Frame1 />
+      </div>
     </div>
   );
 }
+
 
 function InstagramStreamlineCoreRemixFree() {
   return (

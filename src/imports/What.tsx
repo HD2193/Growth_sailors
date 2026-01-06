@@ -1461,7 +1461,7 @@ function Group29() {
     <div className="absolute contents left-[92px] top-[219px]">
       <Group24 />
       <div className="absolute flex flex-col font-['Manrope:Medium',sans-serif] font-medium h-[20px] justify-center leading-[0] left-[257px] text-[#b2b2b2] text-[16px] top-[229px] translate-y-[-50%] w-[67px]">
-        <p className="leading-[55.872px]">13 Cases</p>
+        <p className="leading-[55.872px]">13Cases</p>
       </div>
     </div>
   );
